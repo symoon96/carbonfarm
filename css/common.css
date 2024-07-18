@@ -4,55 +4,51 @@
     파일정의 : 레이아웃
 -------------------------------------------------------------------*/
 /*-------------------------------------------------------------------
-    @공통
--------------------------------------------------------------------*/
-#skip-nav {height:0}
-#skip-nav a {display: block; position: absolute; left: 0; top: -100px; width: 100%; height: 1px; text-align: center}
-#skip-nav a:focus, #skip a:active {position: absolute; top: 0; z-index: 120; height: 25px; padding: 10px 0; font-size: 1.4em; font-weight: 700; color: #36348f; background: #fff;}
-
-/*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header{}
-#header.on{}
+#header {background-color: #82C91E;}
+#header.on {}
+#header .container {display: flex; align-items: center; justify-content: flex-start; height: 12rem;}
 
-.logo{}
-.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
+#header.logo {width: 10rem; height: 10rem; background: url('../img/common/logo.png') no-repeat center; background-size: 100%;}
+#header.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
-.gnb{}
+#header .headline {padding-left: 2.5rem; font-size: 1.6rem; lline-height: 1.3; font-weight: 700; color: #D8F5A2;}
 
-.gnb-m{}
-
-.etc {}
-
-.shortcut {}
-
-.util {}
-
-.support {}
-
-.assistant {}
-
-.branding {}
+#header .gnb {padding-left: 5rem;}
+#header .gnb ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 8rem;}
+#header .gnb ul li a {display: block;}
+#header .gnb ul li a i {margin: 0 auto;}
+#header .gnb ul li a p {font-size: 1.4rem; font-weight: 600; line-height: 1.3; text-align: center; color: #343A40; margin-top: 0.8rem;}
  
 /*-------------------------------------------------------------------
     @footer
 -------------------------------------------------------------------*/
-#footer{}
+#footer {padding-top: 4rem; padding-bottom: 4rem; background-color: #495057;}
+#footer .container {display: flex; align-items: flex-start; gap: 0 4rem;}
 
-.link{}
+#footer .logo {width: 12rem; height: 12rem; flex: none; background: url('../img/common/logo_foot.png') no-repeat center; background-size: 100%;}
 
-.family{}
+#footer .company {flex: 1 0;}
+#footer .company .link ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 3rem;}
+#footer .company .link ul li {position: relative;}
+#footer .company .link ul li + li::before {content: ""; width: 1px; height: 1.1rem; position: absolute; lleft: -1.6rem; top: 50%; transform: translateY(-50%); background-color: #CED4DA;}
+#footer .company .link ul li a {display block; font-size: 1.4rem; font-weight: 600; color: #E9ECEF;}
+#footer .company .link + p {margin-top: 1.2rem;}
+#footer .company p {font-size: 1.4rem; line-height: 1.5; color: #CED4DA;}
 
-.sns{}
-
-.address{}
-
-.logo-f{}
-
-.copyright{}
-
-.fnb {}
+#footer .fnb {width: 36rem;}
+#footer .fnb ul li a {displaly: flex; align-items: stretch; width: 100%}
+#footer .fnb ul li .img-area {width: 8rem; flex: none; displlay: flex; align-items: center; justify-content: center; padding-top: 1.4rem; padding-bottom: 1.4rem;}
+#footer .fnb ul li .img-area img {width: 3.6rem;}
+#footer .fnb ul li .txt-area {flex: 1 0; padding: 2rem 2rem; background-image: url('../img/icon/ic_fnb_arr.png'); background-repeat: no-repeat; background-position: right 2rem center; background-size: 2.4rem;}
+#footer .fnb ul li .txt-area p {color: ##ffffff; font-size: 1.6rem; line-height: 1.3; font-weight: 600}
+#footer .fnb ul li:nth-child(1) .img-area {background-color: #0F5A3D;}
+#footer .fnb ul li:nth-child(1) .img-area {background-color: #087F5B;}
+#footer .fnb ul li:nth-child(2) .img-area {background-color: #5C940D;}
+#footer .fnb ul li:nth-child(2) .img-area {background-color: #6A80F;}
+#footer .fnb ul li:nth-child(3) .img-area {background-color: #E67700;}
+#footer .fnb ul li:nth-child(3) .img-area {background-color: #F59F00;}
  
 /*-------------------------------------------------------------------
     @content
