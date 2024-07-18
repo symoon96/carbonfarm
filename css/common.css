@@ -13,7 +13,7 @@
 #header.logo {width: 10rem; height: 10rem; background: url('../img/common/logo.png') no-repeat center; background-size: 100%;}
 #header.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
-#header .headline {padding-left: 2.5rem; font-size: 1.6rem; lline-height: 1.3; font-weight: 700; color: #D8F5A2;}
+#header .headline {padding-left: 2.5rem; font-size: 1.6rem; line-height: 1.3; font-weight: 700; color: #D8F5A2;}
 
 #header .gnb {padding-left: 5rem;}
 #header .gnb ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 8rem;}
@@ -32,30 +32,30 @@
 #footer .company {flex: 1 0;}
 #footer .company .link ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 3rem;}
 #footer .company .link ul li {position: relative;}
-#footer .company .link ul li + li::before {content: ""; width: 1px; height: 1.1rem; position: absolute; lleft: -1.6rem; top: 50%; transform: translateY(-50%); background-color: #CED4DA;}
-#footer .company .link ul li a {display block; font-size: 1.4rem; font-weight: 600; color: #E9ECEF;}
+#footer .company .link ul li + li::before {content: ""; width: 1px; height: 1.1rem; position: absolute; left: -1.6rem; top: 50%; transform: translateY(-50%); background-color: #CED4DA;}
+#footer .company .link ul li a {display: block; font-size: 1.4rem; font-weight: 600; color: #E9ECEF;}
 #footer .company .link + p {margin-top: 1.2rem;}
 #footer .company p {font-size: 1.4rem; line-height: 1.5; color: #CED4DA;}
 
 #footer .fnb {width: 36rem;}
-#footer .fnb ul li a {displaly: flex; align-items: stretch; width: 100%}
-#footer .fnb ul li .img-area {width: 8rem; flex: none; displlay: flex; align-items: center; justify-content: center; padding-top: 1.4rem; padding-bottom: 1.4rem;}
+#footer .fnb ul li a {display: flex; align-items: stretch; width: 100%}
+#footer .fnb ul li .img-area {width: 8rem; flex: none; display: flex; align-items: center; justify-content: center; padding-top: 1.4rem; padding-bottom: 1.4rem;}
 #footer .fnb ul li .img-area img {width: 3.6rem;}
 #footer .fnb ul li .txt-area {flex: 1 0; padding: 2rem 2rem; background-image: url('../img/icon/ic_fnb_arr.png'); background-repeat: no-repeat; background-position: right 2rem center; background-size: 2.4rem;}
-#footer .fnb ul li .txt-area p {color: ##ffffff; font-size: 1.6rem; line-height: 1.3; font-weight: 600}
+#footer .fnb ul li .txt-area p {color: #ffffff; font-size: 1.6rem; line-height: 1.3; font-weight: 600}
 #footer .fnb ul li:nth-child(1) .img-area {background-color: #0F5A3D;}
-#footer .fnb ul li:nth-child(1) .img-area {background-color: #087F5B;}
+#footer .fnb ul li:nth-child(1) .txt-area {background-color: #087F5B;}
 #footer .fnb ul li:nth-child(2) .img-area {background-color: #5C940D;}
-#footer .fnb ul li:nth-child(2) .img-area {background-color: #6A80F;}
+#footer .fnb ul li:nth-child(2) .txt-area {background-color: #66A80F;}
 #footer .fnb ul li:nth-child(3) .img-area {background-color: #E67700;}
-#footer .fnb ul li:nth-child(3) .img-area {background-color: #F59F00;}
+#footer .fnb ul li:nth-child(3) .txt-area {background-color: #F59F00;}
  
 /*-------------------------------------------------------------------
     @content
 -------------------------------------------------------------------*/
 #content{}
 
-.container{ margin-left: auto; margin-right: auto; position: relative; }
+.container {max-width: 117.4rem; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem;}
 .container::after{ display: block; clear: both; content: ""; }
 
 .has-padding{}
