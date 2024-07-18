@@ -6,10 +6,14 @@
 /* 공통 */
 .main{}
 
-.main [class^='sec']{}
-.main [class^='sec'] .tit-sec{}
+.main [class^='section'] {padding-top: 8rem; padding-bottom: 8rem;}
+.main [class^='section'] .list-wrap {margin-top: 2rem;}
 
 /* 섹션 */
 .main .visual{}
 
-.main .section01{}
+.main .section01 {background-color: #D2DCC4;}
+
+.main .section02 {background-color: #FBF5E5;}
+
+.main .section03 {background-color: #D4E0DC;}
