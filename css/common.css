@@ -6,20 +6,24 @@
 /*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header {background-color: #82C91E;}
+#header {}
 #header.on {}
 #header .container {display: flex; align-items: center; justify-content: flex-start; height: 12rem;}
 
-#header.logo {width: 10rem; height: 10rem; background: url('../img/common/logo.png') no-repeat center; background-size: 100%;}
-#header.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
+#header .logo {width: 10rem; height: 10rem; background: url('../img/common/logo.png') no-repeat center; background-size: 100%;}
+#header .logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
-#header .headline {padding-left: 2.5rem; font-size: 1.6rem; line-height: 1.3; font-weight: 700; color: #D8F5A2;}
+#header .headline {padding-left: 2.5rem; font-size: 1.6rem; line-height: 1.3; font-weight: 700; color: #82C91E;}
 
-#header .gnb {padding-left: 5rem;}
-#header .gnb ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 8rem;}
+#header .gnb {padding-left: 5rem; width: 53.5rem;}
+#header .gnb ul {display: flex; align-items: center; justify-content: space-between;}
+#header .gnb ul li {flex: none;}
 #header .gnb ul li a {display: block;}
 #header .gnb ul li a i {margin: 0 auto;}
 #header .gnb ul li a p {font-size: 1.4rem; font-weight: 600; line-height: 1.3; text-align: center; color: #343A40; margin-top: 0.8rem;}
+#header .gnb ul li a p br {display: none;}
+
+#header .btn-header-gnb {display: none;}
  
 /*-------------------------------------------------------------------
     @footer
@@ -56,7 +60,6 @@
 #content{}
 
 .container {max-width: 117.4rem; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem;}
-.container::after{ display: block; clear: both; content: ""; }
 
 .has-padding{}
 
@@ -74,3 +77,57 @@
 .popup .pop-cont{}
 
 .popup .pop-footer{}
+
+@media screen and (max-width:1174px) {
+    /*-------------------------------------------------------------------
+        @header
+    -------------------------------------------------------------------*/
+    #header {background-color: #82C91E;}
+    #header .container {position: relative; z-index: 2; height: 9rem;}
+    
+    #header .logo {width: 8.4rem; height: 8.4rem;}
+
+    #header .headline {padding-left: 2.5rem; font-size: 1.6rem; line-height: 1.3; font-weight: 700; color: #D8F5A2;}
+
+    #header .gnb {position: absolute; padding-left: 0; width: 100vw; background-color: #ffffff; padding: 3rem 2rem; top: 100%; left: 0; display: none;}
+    #header .gnb ul {justify-content: center; gap: 0 2.5rem; align-items: flex-start;}
+    #header .gnb ul li {flex: none;}
+    #header .gnb ul li a p br {display: block;}
+
+    #header .btn-header-gnb {display: block; position: absolute; right: 2rem; top: 50%; transform: translateY(-50%);}
+
+    /*-------------------------------------------------------------------
+        @footer
+    -------------------------------------------------------------------*/
+    #footer {padding-top: 2rem; padding-bottom: 2rem; background-color: #495057;}
+    #footer .container {display: flex; align-items: flex-start; flex-wrap: wrap; gap: 0 4rem; padding-left: 4rem; padding-right: 4rem;}
+
+    #footer .logo {margin-top: 2rem;}
+
+    #footer .company {margin-top: 2rem;}
+
+    #footer .fnb {width: calc(100% + 8rem); order: -1; margin-top: -2rem; margin-left: -4rem; margin-right: -4rem;}
+}
+
+@media screen and (max-width: 720px) {
+    #header .container {height: 6rem;}
+
+    #header .logo {width: 6.7rem; height: 3.2rem;}
+
+    #header .headline {padding-left: 3rem; font-size: 1.2rem;}
+
+    #header .gnb ul {justify-content: space-between;}
+
+    /*-------------------------------------------------------------------
+        @footer
+    -------------------------------------------------------------------*/
+    #footer .container {gap: 2rem 2rem;}
+
+    #footer .logo {width: 5rem; height: 5rem; margin-top: 2rem;}
+
+    #footer .company {margin-top: 2rem;}
+    #footer .company .link ul li a {font-size: 1.3rem;}
+    #footer .company .link + p {margin-top: 1rem;}
+    #footer .company p {font-size: 1.2rem;}
+
+}
