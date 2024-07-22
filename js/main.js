@@ -1,17 +1,20 @@
 let visualImg;
+let subSlideImg
 
 $(window).on('load',function(){
     visualImg = $('.visual .img-view .swiper img');
+    subSlideImg = $('.detail-wrap .detail-body .img-wrap .img-area img');
 });
 
 $(document).ready(function(){
     visualImg = $('.visual .img-view .swiper img');
+    subSlideImg = $('.detail-wrap .detail-body .img-wrap .img-area img');
     imgChange(visualImg);
+    imgChange(subSlideImg);
     
     let txtSwiper = new Swiper(".visual .txt-view .swiper", {
         loop: true,
-        freeMode: true,
-        watchSlidesProgress: true,
+        allowTouchMove: false
     });
     let imgSwiper = new Swiper(".visual .img-view .swiper", {
         loop: true,
@@ -30,6 +33,7 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         imgChange(visualImg);
+        imgChange(subSlideImg);
     })
 })
 

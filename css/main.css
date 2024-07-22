@@ -12,8 +12,8 @@
 /* 섹션 */
 .main .visual .txt-view {background-color: #5C940D;}
 .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide {display: flex; align-items: center; justify-content: center; gap: 0 1.5rem; height: 8rem; background-color: #5C940D;}
-.main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area {height: 4.2rem; display: flex; align-items: center; justify-content: center;}
-.main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area img {max-height: 100%; width: auto;}
+.main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area {max-height: 7rem; max-width: 16rem; display: flex; align-items: center; justify-content: center;}
+.main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area img {max-height: 7rem; max-width: 100%; width: auto;}
 .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .text-area p {color: #ffffff; font-size: 1.6rem; line-height: 1.4;}
 .main .visual [class*="swiper-button-"] {width: 4rem; height: 4rem; background-repeat: no-repeat; background-size: 100%; background-position: center;}
 .main .visual [class*="swiper-button-"]::after {display: none;}
@@ -32,7 +32,8 @@
 
     /* 섹션 */
     .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide {gap: 0 0.8rem; height: 5.6rem;}
-    .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area {max-width: 10.2rem; height: 4.8rem;}
+    .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area {max-width: 10.2rem; max-height: 4.8rem;}
+    .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .logo-area img {max-height: 4.8rem;}
     .main .visual .txt-view .swiper .swiper-wrapper .swiper-slide .text-area p {font-size: 1.2rem;}
     .main .visual .txt-view .container {padding-left: 0.8rem; padding-right: 0.8rem;}
     .main .visual [class*="swiper-button-"] {width: 2rem; height: 2rem; top: 50%; transform: translateY(-50%); margin-top: auto;}
