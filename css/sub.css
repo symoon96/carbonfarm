@@ -28,10 +28,37 @@
 .loc ul li:first-of-type a{}
 .loc ul li:last-of-type a{}
 
+/* 상세보기 */
+.detail-wrap .detail-head {padding-top: 4rem; padding-bottom: 4rem;}
+.detail-wrap .detail-head .btn-back {display: none;}
+.detail-wrap .detail-head .detail-info {max-width: 48.5rem; margin: 0 auto; display: flex; gap: 0 3rem; margin-top: 4rem;}
+.detail-wrap .detail-head .title {text-align: center; font-size: 4rem; font-weight: 600; color: #ffffff;}
+.detail-wrap .detail-head .thumb {width: 20rem; height: 20rem; border-radius: 1rem; position: relative; overflow: hidden; flex: none;}
+.detail-wrap .detail-head .thumb img {position: absolute; lft: 50%; top: 50%; transform: translate(-50%); width: 100%; height: 100%; object-fit: cover;}
+.detail-wrap .detail-head .text-add {font-size: 1.6rem; color: #ffffff; line-height: 1.3;}
+.detail-wrap .detail-head .text-call {margin-top: 1.2rem; font-size: 1.4rem; padding-left: 2rem; color: #ffffff; background: url('../img/icon/ic_detail_call.png') no-repeat left center; background-size: 1.4rem;}
+.detail-wrap .detail-head .text-email {margin-top: 1.2rem; font-size: 1.4rem; padding-left: 2rem; color: #ffffff; background: url('../img/icon/ic_detail_email.png') no-repeat left center; background-size: 1.4rem;}
+.detail-wrap .detail-head .share-area {margin-top: 2rem; display: flex; align-items: flex-start; justify-content: flex-start; gap: 1rem;}
+.detail-wrap .detail-head .text {margin-top: 3rem; text-align: center; color: #ffffff; font-size: 1.4rem; line-height: 1.4;}
+.detail-wrap .detail-body {padding-top: 4rem;}
+.detail-wrap .detail-body .tit.v2 {margin-top: 8rem;}
+.detail-wrap .detail-body .img-wrap {margin-top: 2rem; border-radius: 1rem; overflow: hidden;}
+.detail-wrap .detail-body .img-wrap .caption {background-color: #fffffff; padding: 2rem 4rem;}
+.detail-wrap .detail-body .img-wrap .caption p {font-size: 1.4rem; line-height: 1.4}
+.detail-wrap .detail-body .img-wrap .caption .btn-detail {display: none; margin-top: 1rem;}
+.detail-wrap .detail-body .txt-normal {margin-top: 8rem; font-size: 3.2rem; line-height: 1.6;}
+.detail-wrap .detail-body .collage-area.v1 {display: flex; background-color: #ffffff; border-radius: 1rem; align-items: center; margin-top: 2rem;}
+.detail-wrap .detail-body .collage-area.v2 {display: flex; flex-wrap: wrap; gap: 3rem 3rem;}
+.detail-wrap .detail-body .collage-area.v2 .item {width: calc((100% - 3rem)/2); border-radius: 1rem;}
 /*-------------------------------------------------------------------
     @메뉴명
 -------------------------------------------------------------------*/
-/* 서브메뉴명 > 화면명 */
+/* 탄소농장 */
+.farm .detail-wrap .detail-head {background-color: #5C940D;}
+
+/* 탄소농장물 */
+.product .detail-wrap .detail-head {background-color: #A78F52;}
+.product .detail-wrap .detail-body .txt-normal {color: #A78F52;}
 
 @media screen and (max-width: 720px) {
     /*-------------------------------------------------------------------
@@ -46,4 +73,28 @@
     .sub-visual .tit-visual {font-size: 1.4rem;}
 
     .sub-visual .txt-visual {font-size: 3.2rem;}
+
+    /* 상세보기 */
+    .detail-wrap .detail-head {padding-top: 2rem; padding-bottom: 2rem;}
+    .detail-wrap .detail-head .btn-back {display: block;]
+    .detail-wrap .detail-head .detail-info {gap: 0 2rem;}
+    .detail-wrap .detail-head .title {font-size: 1.8rem;}
+    .detail-wrap .detail-head .thumb {width: 10rem; height: 10rem;}
+    .detail-wrap .detail-head .text-add {font-size: 1.4rem;}
+    .detail-wrap .detail-head .text-call {margin-top: 0.8rem; font-size: 1.2rem;}
+    .detail-wrap .detail-head .text-email {margin-top: 0.8rem; font-size: 1.2rem;}
+    .detail-wrap .detail-head .share-area {margin-top: 1rem;}
+    .detail-wrap .detail-head .text {margin-top: 2rem; text-align: left;}
+    .detail-wrap .detail-head .text br {display: none;}
+    .detail-wrap .detail-body .btn-back {display: none;}
+    .detail-wrap .detail-body .tit.v2 {margin-top: 4rem;}
+    .detail-wrap .detail-body .tit.v2:nth-of-type(1) {margin-top: 0;}
+    .detail-wrap .detail-body .img-wrap .caption {padding: 1rem 1.2rem;}
+    .detail-wrap .detail-body .img-wrap .caption p {font-size: 1.4rem; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+    .detail-wrap .detail-body .img-wrap .caption:has(.btn-detail) p {height: 2rem;}
+    .detail-wrap .detail-body .img-wrap .caption .btn-detail {display: block;}
+    .detail-wrap .detail-body .txt-normal {margin-top: 0; font-size: 1.6rem;}
+    .detail-wrap .detail-body .collage-area.v1 {flex-direction: column;}
+    .detail-wrap .detail-body .collage-area.v2 {gap: 2rem 2rem;}
+    .detail-wrap .detail-body .collage-area.v2 .item {width: calc((100% - 2rem)/2);}
 }
