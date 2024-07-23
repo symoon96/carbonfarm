@@ -9,10 +9,17 @@
     @elements
 -------------------------------------------------------------------*/
 /* button */
-.btn-wrap{}
+.btn-wrap {display; flex; align-items: center; justify-content: center; gap; 0 1rem;}
 
-.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; }
+.btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; display: flex; align-items: center; justify-content: center;}
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
+
+.btn.lg {gap: 0 1rem; font-size: 1.6rem; font-weight: 600; height: 5.4rem;}
+
+.btn.circle {border-radius: 50rem;}
+
+.btn.fill-brown {background-color: #A78F52; color: #ffffff; border-color: #A78F52;}
+.btn.fill-blue {background-color: #78A395; color: #ffffff; border-color: #78A395;}
 
 .btn-more {font-size: 1.2rem; font-weight: 500; background-color: #ffffff; padding: 0 0.8rem; height: 2.2rem; color: #868E96; border-radius: 0.4rem;}
 [class*="btn-header-gnb"] {width: 2.4rem; height: 2.4rem;}
@@ -148,6 +155,8 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
         @elements
     -------------------------------------------------------------------*/
     /* button */
+    .btn.lg {gap: 0 0.4rem; font-size; 1.4rem; height; 4rem;}    
+    
     [class*="btn-share-"] {width: 3rem; height: 3rem;}
 
     /* list */
