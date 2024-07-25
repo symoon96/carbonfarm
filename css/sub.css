@@ -13,9 +13,12 @@
 .sub-visual {height: 40rem; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .sub-visual .container {height: 40rem; display: flex; align-items: flex-start; justify-content: center; max-width: 90rem; flex-direction: column;}
 
-.sub-visual.bg01 {background-image: url('../img/sub/bg_sub_visual01.png');}
-.sub-visual.bg02 {background-image: url('../img/sub/bg_sub_visual02.png');}
-.sub-visual.bg03 {background-image: url('../img/sub/bg_sub_visual03.png');}
+.sub-visual.bg01 {background-image: url('../img/sub/bg_sub_visual_pc_01.png');}
+.sub-visual.bg02 {background-image: url('../img/sub/bg_sub_visual_pc_02.png');}
+.sub-visual.bg03 {background-image: url('../img/sub/bg_sub_visual_pc_03.png');}
+.sub-visual.bg04 {background-image: url('../img/sub/bg_sub_visual_pc_04.png');}
+.sub-visual.bg05 {background-image: url('../img/sub/bg_sub_visual_pc_05.png');}
+.sub-visual.bg06 {background-image: url('../img/sub/bg_sub_visual_pc_06.png');}
 
 .sub-visual .tit-visual {font-size: 2rem; line-height: 1.3; color: #ffffff; font-weight: 500;}
 
@@ -53,33 +56,37 @@
 .detail-wrap .detail-body .img-wrap .caption p {font-size: 1.4rem; line-height: 1.4}
 .detail-wrap .detail-body .img-wrap .caption .btn-detail {display: none; margin-top: 1rem;}
 .detail-wrap .detail-body .txt-headline {margin-top: 8rem; font-size: 3.2rem; line-height: 1.6;}
-.detail-wrap .detail-body .txt-num {margin-top: 8rem; width: 6rem; height: 6rem; line-height: 6rem; text-align: center; color: #ffffff; font-size: 2rem; margin-left; auto; margin-right; auto;}
+.detail-wrap .detail-body .txt-num {margin-top: 8rem; width: 6rem; height: 6rem; line-height: 6rem; text-align: center; color: #ffffff; font-size: 2rem; margin-left: auto; margin-right: auto;}
 .detail-wrap .detail-body .txt-num + .txt-headline {margin-top: 2rem;}
-.detail-wrap .detail-body .txt-normal {width: fit-content; margin-left: auto; margin-right: auto; max-width: 63rem; font-size: 1.6rem; line-height: 1.6rem;}
+.detail-wrap .detail-body .txt-normal {width: fit-content; margin-left: auto; margin-right: auto; max-width: 63rem; font-size: 1.6rem; line-height: 1.6;}
 .detail-wrap .detail-body .txt-headline + .txt-normal {margin-top: 2rem;}
 .detail-wrap .detail-body .collage-area.v1 {display: flex; background-color: #ffffff; border-radius: 1rem; align-items: center; margin-top: 2rem;}
 .detail-wrap .detail-body .collage-area.v2 {display: flex; flex-wrap: wrap; gap: 3rem 3rem; margin-top: 2rem;}
 .detail-wrap .detail-body .collage-area.v2 .item {width: calc((100% - 3rem)/2);}
-.detail-wrap .detail-body .collage-area.v2 .item .img-area {border-radius: 1rem; overflow: hidden; position: relative; padding-top; 66.667%;}
+.detail-wrap .detail-body .collage-area.v2 .item .img-area {border-radius: 1rem; overflow: hidden; position: relative; padding-top: 66.667%;}
 .detail-wrap .detail-body .collage-area.v2 .item .img-area img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
 .detail-wrap .detail-body .collage-area.v2 .item p {font-size: 1.8rem; text-align: center; font-weight: 600; text-align: center; margin-top: 0.8rem;}
-.detail-wrap .detail-body .collage-area.v3 {display: flex; flex-wrap: wrap: gap: 1rem 1rem; margin-top: 2rem;}
+.detail-wrap .detail-body .collage-area.v3 {display: flex; flex-wrap: wrap; gap: 1rem 1rem; margin-top: 2rem;}
 .detail-wrap .detail-body .txt-card + .collage-area.v3 {margin-top: 8rem;}
-.detail-wrap .detail-body .collage-area.v3 .item {width: calc((100% _ 3rem)/4);}
+.detail-wrap .detail-body .collage-area.v3 .item {width: calc((100% - 3rem)/4);}
 .detail-wrap .detail-body .collage-area.v3 .item .img-area {overflow: hidden; position: relative; padding-top: 100%;}
 .detail-wrap .detail-body .collage-area.v3 .item .img-area img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
-.detail-wrap .detail-body .collage-area.v4 {display: flex; flex-wrap: wrap: gap: 1rem 1rem; margin-top: 8rem;}
+.detail-wrap .detail-body .collage-area.v4 {display: flex; flex-wrap: wrap; gap: 1rem 1rem; margin-top: 8rem;}
 .detail-wrap .detail-body .txt-card +  .collage-area.v4 {margin-top: 2rem;}
 .detail-wrap .detail-body .collage-area.v4 .item {width: calc((100% - 2rem)/3); background-color: #ffffff; padding: 1rem 1.3rem;}
-.detail-wrap .detail-body .collage-area.v4 .item p {font-size; 1.4rem; text-align: center; font-weight; 600; line-height: 1.6}
+.detail-wrap .detail-body .collage-area.v4 .item p {font-size: 1.4rem; text-align: center; font-weight: 600; line-height: 1.6}
 .detail-wrap .detail-body .collage-area.v4 .item .img-area {overflow: hidden; position: relative; padding-top: 67.762%; margin-top: 1rem;}
 .detail-wrap .detail-body .collage-area.v4 .item .img-area img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
-.detail-wrap .detail-body .txt-card {display: flex; align-items: strech; justify-content: center; gap: 0.2rem 1rem; margin-top: 4rem;}
+.detail-wrap .detail-body .collage-area.v5 {display: flex; flex-wrap: wrap; gap: 3rem 3rem; margin-top: 2rem;}
+.detail-wrap .detail-body .collage-area.v5 .item {width: calc((100% - 3rem)/2);}
+.detail-wrap .detail-body .collage-area.v5 .item .img-area {border-radius: 1rem; overflow: hidden; position: relative; padding-top: 100%;}
+.detail-wrap .detail-body .collage-area.v5 .item .img-area img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
+.detail-wrap .detail-body .txt-card {display: flex; align-items: stretch; justify-content: center; gap: 0.2rem 1rem; margin-top: 4rem;}
 .detail-wrap .detail-body .txt-card .card {max-width: 63rem; flex: 1 0; background-color: #ffffff; padding: 2rem 1rem 3.5rem;}
 .detail-wrap .detail-body .txt-card .card dt {text-align: center; font-size: 1.6rem; line-height: 1.6; font-weight: 600;}
 .detail-wrap .detail-body .txt-card .card dd {display: flex; align-items: center; justify-content: center; padding-top: 2rem;}
 .detail-wrap .detail-body .txt-card .card dd .inner p {font-size: 1.4rem; line-height: 1.6; text-align: center;}
-.detail-wrap .detail-body .btn-wrap {margin-top; 7rem;}
+.detail-wrap .detail-body .btn-wrap {margin-top: 7rem;}
 .detail-wrap .detail-body .btn-wrap .btn {width: 22rem;}
 /*-------------------------------------------------------------------
     @메뉴명
@@ -96,6 +103,50 @@
 .program .detail-wrap .detail-body .txt-headline {color: #78A395; text-align: center;}
 .program .detail-wrap .detail-body .txt-num {background-color: #78A395;}
 
+/* 서비스 소개 */
+.service {padding-top: 8rem;}
+.service .row {display: flex; align-items: center; justify-content: center; gap: 0 10rem;}
+.service .row + .row {margin-top: 8rem;}
+.service .row .col {flex: 1 0;}
+.service .row .col img {height: 6.4rem; margin: 0 auto;}
+.service .row .col .title {text-align: center; margin-top: 1rem; font-size: 1.8rem; line-height: 1.6; font-weight: 600;}
+.service .row .col .text {font-size: 1.6rem; line-height: 1.6; margin-top: 2rem; text-align: center;}
+.service .row:nth-child(2) .col {flex: none; width: 32rem;}
+
+/* 탄소농장 소개 */
+.farm-info {padding-top: 8rem;}
+.farm-info .row {display: flex; align-items: center; justify-content: center; gap: 0 10rem;}
+.farm-info .row + .row {margin-top: 8rem;}
+.farm-info .row .col {flex: 1 0;}
+.farm-info .row .col img {height: 6.4rem; margin: 0 auto;}
+.farm-info .row .col .title {text-align: center; margin-top: 1rem; font-size: 1.8rem; line-height: 1.6; font-weight: 600;}
+.farm-info .row .col .text {font-size: 1.6rem; line-height: 1.6; margin-top: 2rem; text-align: center;}
+.farm-info .note {max-width: 66.5rem; background-color: #E9FAC8; margin-top: 2rem; margin-left: auto; margin-right: auto; padding: 2rem 2rem;}
+.farm-info .note .text {margin-top: 0 !important;}
+.farm-info .note .list {display: flex; align-items: center; justify-content: center; margin-top: 2rem;}
+.farm-info .note .list ul li {position: relative; padding-left: 1.8rem; font-size: 1.4rem; line-height: 1.6;}
+.farm-info .note .list ul li::before {content: ""; width: 0.2rem; height: 0.2rem; border-radius: 50%; position: absolute; left: 0.7rem; top: 1.1rem; background-color: #343A40;}
+
+/* 탄소농법 소개 */
+.method-info {padding-top: 8rem;}
+.method-info .row {display: flex; align-items: center; justify-content: center; gap: 0 10rem;}
+.method-info .row + .row {margin-top: 8rem;}
+.method-info .row .col {flex: 1 0;}
+.method-info .row .col img {height: 6.4rem; margin: 0 auto;}
+.method-info .row .col .title {text-align: center; margin-top: 1rem; font-size: 1.8rem; line-height: 1.6; font-weight: 600;}
+.method-info .row .col .text {font-size: 1.6rem; line-height: 1.6; margin-top: 2rem; text-align: center;}
+.method-info .row .col .row {margin-top: 3rem; gap: 4rem 4rem; flex-wrap: wrap; align-items: stretch;}
+.method-info .row .col .row .col {width: calc((100% - 4rem)/2); flex: none;}
+.method-info .row .col .row .col .title,
+.method-info .row .col .row .col .text {text-align: left;}
+.method-info .row .col .row .col .title {font-size: 1.6rem;}
+.method-info .row .col .row .col .text {font-size: 1.4rem; margin-top: 1rem;}
+.method-info .note {max-width: 66.5rem; background-color: #C3FAE8; margin-top: 2rem; margin-left: auto; margin-right: auto; padding: 2rem 2rem;}
+.method-info .note .text {margin-top: 0 !important;}
+.method-info .note .list {display: flex; align-items: center; justify-content: center; margin-top: 2rem;}
+.method-info .note .list ul li {position: relative; padding-left: 1.8rem; font-size: 1.4rem; line-height: 1.6;}
+.method-info .note .list ul li::before {content: ""; width: 0.2rem; height: 0.2rem; border-radius: 50%; position: absolute; left: 0.7rem; top: 1.1rem; background-color: #343A40;}
+
 @media screen and (max-width: 720px) {
     /*-------------------------------------------------------------------
         @공통
@@ -105,6 +156,13 @@
     /* 서브 비쥬얼 */
     .sub-visual {height: 18rem;}
     .sub-visual .container {height: 18rem;}
+
+    .sub-visual.bg01 {background-image: url('../img/sub/bg_sub_visual_m_01.png');}
+    .sub-visual.bg02 {background-image: url('../img/sub/bg_sub_visual_m_02.png');}
+    .sub-visual.bg03 {background-image: url('../img/sub/bg_sub_visual_m_03.png');}
+    .sub-visual.bg04 {background-image: url('../img/sub/bg_sub_visual_m_04.png');}
+    .sub-visual.bg05 {background-image: url('../img/sub/bg_sub_visual_m_05.png');}
+    .sub-visual.bg06 {background-image: url('../img/sub/bg_sub_visual_m_06.png');}
 
     .sub-visual .tit-visual {font-size: 1.4rem;}
 
@@ -125,6 +183,7 @@
     .detail-wrap .detail-body .btn-back {display: none;}
     .detail-wrap .detail-body .tit.v2 {margin-top: 4rem;}
     .detail-wrap .detail-body .tit.v2:nth-of-type(1) {margin-top: 0;}
+    .detail-wrap .detail-body .img-wrap .img-area [class*="swiper-button-"] {width: 3.2rem; height: 3.2rem; background-size: 0.8rem;}
     .detail-wrap .detail-body .img-wrap .caption {padding: 1rem 1.2rem;}
     .detail-wrap .detail-body .img-wrap .caption p {font-size: 1.4rem; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
     .detail-wrap .detail-body .img-wrap .caption:has(.btn-detail) p {height: 2rem;}
@@ -137,20 +196,46 @@
     .detail-wrap .detail-body .collage-area.v1 {flex-direction: column;}
     .detail-wrap .detail-body .collage-area.v2 {gap: 2rem 2rem;}
     .detail-wrap .detail-body .collage-area.v2 .item {width: calc((100% - 2rem)/2);}
-    .detail-wrap .detail-body .collage-area.v2 .item p {font-size; 1.4rem;}
+    .detail-wrap .detail-body .collage-area.v2 .item p {font-size: 1.4rem;}
     .detail-wrap .detail-body .txt-card + .collage-area.v3 {margin-top: 4rem;}
     .detail-wrap .detail-body .collage-area.v3 .item {width: calc((100% - 1rem)/2);}
     .detail-wrap .detail-body .collage-area.v4 {margin-top: 4rem;}
     .detail-wrap .detail-body .collage-area.v4 .item {width: 100%;}
+    .detail-wrap .detail-body .collage-area.v5 {gap: 2rem 2rem; margin-top: 2rem;}
+    .detail-wrap .detail-body .collage-area.v5 .item {width: calc((100% - 2rem)/2);}
     .detail-wrap .detail-body .txt-card {margin-top: 2rem; flex-direction: column;}
     .detail-wrap .detail-body .txt-card .card {width: 100%; padding: 1rem 1rem;}
     .detail-wrap .detail-body .txt-card .card dt {text-align: left; font-size: 1.4rem;}
     .detail-wrap .detail-body .txt-card .card dd {justify-content: flex-start; padding-top: 0;}
-    .detail-wrap .detail-body .txt-card .dard dd .inner p {text-align: left; word-break: keep-all;}
+    .detail-wrap .detail-body .txt-card .card dd .inner p {text-align: left; word-break: keep-all;}
     .detail-wrap .detail-body .txt-card .card dd .inner p br {display: none;}
     .detail-wrap .detail-body .btn-wrap {margin-top: 2rem;}
-    .detail-wrap .detail-body .btn-wrap .btn {width: calc((100% - 1rem)/2);]
+    .detail-wrap .detail-body .btn-wrap .btn {width: calc((100% - 1rem)/2);}
 
     /* 프로그램 */
     .program .detail-wrap .detail-body .txt-headline br {display: block;}
+
+    /* 서비스 소개 */
+    .service {padding-top: 4rem;}
+    .service .row {gap: 6rem; flex-direction: column;}
+    .service .row + .row {margin-top: 6rem;}
+    .service .row .col {flex: 1 0; width: 100%;}
+    .service .row .col .text {text-align: left;}
+    .service .row:nth-child(2) .col {width: 100%;}
+
+    /* 탄소농장 소개 */
+    .farm-info {padding-top: 4rem;}
+    .farm-info .row + .row {margin-top: 6rem;}
+    .farm-info .row .col .text {text-align: left;}
+    .farm-info .note {background-color: transparent; padding: 0;}
+    .farm-info .note .list {justify-content: flex-start;}
+
+    /* 탄소농법 소개 */
+    .method-info {padding-top: 4rem;}
+    .method-info .row + .row {margin-top: 6rem;}
+    .method-info .row .col .text {text-align: left;}
+    .method-info .row .col .row {margin-top: 2rem; gap: 2rem 2rem; flex-direction: column;}
+    .method-info .row .col .row .col {width: 100%; flex: none;}
+    .method-info .note {background-color: transparent; padding: 0;}
+    .method-info .note .list {justify-content: flex-start;}
 }

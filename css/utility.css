@@ -76,9 +76,12 @@
  
 /* 배경 */
 .bg-green01 {background-color: #D2DCC4 !important;}
+.bg-green02 {background-color: #F4FCE3 !important;}
 .bg-gray01 {background-color: #F1F3F5 !important;}
 .bg-brown01 {background-color: #FBF5E5 !important;}
 .bg-blue01 {background-color: #D4E0DC !important;}
+.bg-blue02 {background-color: #E6FCF5 !important;}
+.bg-yellow01 {background-color: #FFF9DB !important;}
 
 /* 텍스트 */
 

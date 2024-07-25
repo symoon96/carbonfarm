@@ -9,7 +9,7 @@
     @elements
 -------------------------------------------------------------------*/
 /* button */
-.btn-wrap {display; flex; align-items: center; justify-content: center; gap; 0 1rem;}
+.btn-wrap {display: flex; align-items: center; justify-content: center; gap: 0 1rem;}
 
 .btn{ border: 1px solid transparent; padding: 0 0; margin: 0 0; display: flex; align-items: center; justify-content: center;}
 .btn-ic{ border: none; padding: 0; margin: 0; display: block; text-indent: -9999px; background-size: 100%; background-repeat: no-repeat; background-position: center;}
@@ -33,6 +33,7 @@
 .btn-share-facebook {background-image: url('../img/icon/ic_share_facebook.png');}
 .btn-share-band {background-image: url('../img/icon/ic_share_band.png');}
 .btn-share-kakao {background-image: url('../img/icon/ic_share_kakao.png');}
+.btn-detail {width: 4.8rem; height: 2.2rem; border-radius: 0.4rem; background-color: #F1F3F5; font-size: 1.2rem; font-weight: 500; color: #868E96}
 
 /* icon */
 i[class^='ic-'] {display: block; background-repeat: no-repeat; background-position: center; background-size: 100%;}
@@ -41,6 +42,7 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
 .ic-gnb02 {width: 5.6rem; height: 5.6rem; background-image: url('../img/icon/ic_gnb02.png');}
 .ic-gnb03 {width: 5.6rem; height: 5.6rem; background-image: url('../img/icon/ic_gnb03.png');}
 .ic-gnb04 {width: 5.6rem; height: 5.6rem; background-image: url('../img/icon/ic_gnb04.png');}
+.ic-more {width: 1.6rem; height: 1.6rem; background-image: url('../img/icon/ic_more.png');}
 
 /* bullet */
 
@@ -155,7 +157,7 @@ i[class^='ic-'] {display: block; background-repeat: no-repeat; background-positi
         @elements
     -------------------------------------------------------------------*/
     /* button */
-    .btn.lg {gap: 0 0.4rem; font-size; 1.4rem; height; 4rem;}    
+    .btn.lg {gap: 0 0.4rem; font-size: 1.4rem; height: 4rem;}    
     
     [class*="btn-share-"] {width: 3rem; height: 3rem;}
 

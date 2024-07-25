@@ -1,5 +1,26 @@
 $(document).ready(function(){
     slider();  
+
+    $('.detail-wrap .detail-body .img-wrap .caption .btn-detail').click(function(){
+        if(!$(this).hasClass('open')){
+            $(this).siblings('p').css({
+                'height': 'auto',
+                'white-space': 'normal'
+            })
+    
+            $(this).text('닫기')
+            $(this).addClass('open')
+
+        } else {
+            $(this).siblings('p').css({
+                'height': '',
+                'white-space': ''
+            })
+    
+            $(this).text('자세히')
+            $(this).removeClass('open')
+        }
+    })
 })
 
 function slider(){
